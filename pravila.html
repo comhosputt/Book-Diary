@@ -24,8 +24,9 @@
     var rowIndex1 = 1;
     var Index = 1;
     var n = "stud";
-    var name = localStorage.getItem("name");
-	 alert(name);
+   // var name = localStorage.getItem("name");
+	  var name = "GKM3wBQgT9X1gh4qiqzjsUcmwHq2";
+	// alert(name);
     var databaseRef1 = firebase.database().ref('users/');
     databaseRef1.once('value', function(snapshot) {
       snapshot.forEach(function(childSnapshot) {
@@ -41,8 +42,8 @@
         rowIndex1 = rowIndex1 + 1;
       });
     });
-	  alert(usname);
-	  alert(email);
+	 // alert(usname);
+	 // alert(email);
     databaseRef.once('value', function(snapshot) {
       document.write('<head>');
       document.write('<title>Цитаты</title><meta charset="utf-8">');
@@ -93,7 +94,7 @@
         var childData = childSnapshot.val();
         var childKey = childSnapshot.key;
 		if (childData.email==email){
-			alert(email);
+			//alert(email);
         document.write('<div style="background-color:#ffffff; opacity:0.9; border-radius: 20px;border-width: 5px; margin-left: auto; margin-right: auto;" class="row mb-5">');
         
        // document.write('<div class="col-md-6 order-md-1" data-aos="fade-up">');
