@@ -85,7 +85,8 @@
     var Index = 1;
     var n = "stud";
 	var email;
-    var name = localStorage.getItem("name");
+    //var name = localStorage.getItem("name");
+	   var name = "GKM3wBQgT9X1gh4qiqzjsUcmwHq2";
     var databaseRef1 = firebase.database().ref('users/');
     databaseRef1.once('value', function(snapshot) {
       snapshot.forEach(function(childSnapshot) {
