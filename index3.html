@@ -59,8 +59,9 @@ if (user) {
   // No user is signed in.
 }*/
     var n = "stud";
-    //var name = localStorage.getItem("name");
-    var name = "GKM3wBQgT9X1gh4qiqzjsUcmwHq2";
+    var name = localStorage.getItem("uid");
+	//alert (name);
+   // var name = "GKM3wBQgT9X1gh4qiqzjsUcmwHq2";
 	
     var databaseRef1 = firebase.database().ref('users/');
     databaseRef1.once('value', function(snapshot) {
@@ -71,6 +72,7 @@ if (user) {
           usname = childData.username;
           localStorage.setItem("usname", usname);
           localStorage.setItem("uid", name);
+		  localStorage.setItem("name", name);
           localStorage.setItem("vibor", "three");
         }
         rowIndex1 = rowIndex1 + 1;

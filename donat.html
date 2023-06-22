@@ -53,8 +53,8 @@
   	function num(Element) {
 
 
-			alert(Element);
-			alert(email);
+			//alert(Element);
+			//alert(email);
 
 			var databaseRef1 = firebase.database().ref('Diary/');
 			var rowIndex = 1;
@@ -85,8 +85,7 @@
     var Index = 1;
     var n = "stud";
 	var email;
-    //var name = localStorage.getItem("name");
-	   var name = "GKM3wBQgT9X1gh4qiqzjsUcmwHq2";
+    var name = localStorage.getItem("name");
     var databaseRef1 = firebase.database().ref('users/');
     databaseRef1.once('value', function(snapshot) {
       snapshot.forEach(function(childSnapshot) {
